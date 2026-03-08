@@ -6,5 +6,5 @@ def entropy_node(y):
     """
     # Write code here
     _, counts = np.unique(y, return_counts=True)
-    probs = counts / counts.sum()
-    return -np.sum(probs * np.log2(probs))
+    probs = counts/counts.sum()
+    return -np.sum(probs*np.log2(probs))
